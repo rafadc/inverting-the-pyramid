@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3: The Third Back — Inverting the Pyramid</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./three/three.module.min.js","three/addons/":"./three/addons/"}}</script>
+</head>
+<body>
+<nav class="top"><a href="index.html">← All chapters</a><a href="ch02.html">← Chapter 2</a><a href="ch04.html">Chapter 4 →</a></nav>
+<div id="stage"></div>
+<main>
+  <header class="hero">
+    <div class="kicker">Chapter 3</div>
+    <h1>The Third Back</h1>
+    <p>In 1925 Bill McCracken's offside trap had squeezed English football into a sliver either side of halfway, and Newcastle were drawing 0–0 for a living. The FA rewrote the offside law to buy goals, and got a revolution instead. At Arsenal, Herbert Chapman pulled his centre-half back between the full-backs and his inside-forwards into midfield: the 2-3-5 became the W-M.</p>
+    <p class="legend">Drag the pitch to orbit. Press Next to advance the story.</p>
+  </header>
+
+  <section class="step">
+    <h2>Three men, one trap</h2>
+    <p>Under the old law a forward needed three opponents between himself and the goal, and Newcastle's full-backs turned that arithmetic into a weapon. They never stood in line: McCracken stepped up towards halfway while Frank Hudspeth sat deep as cover. Attackers had to take their position from the advanced man, so one stride from McCracken caught a whole forward line offside, and if he misjudged it, Hudspeth swept up behind. Cartoonists drew him clapping with glee. By February 1925 Newcastle had drawn 0–0 six times in a season, the league averaged 2.58 goals a game and crowds were drifting away.</p>
+    <blockquote>‘If they keep behind the ball they cannot be offside.’ — Frank Hudspeth</blockquote>
+    <div class="legend"><span class="dot" style="background:#f2f2f2"></span>Newcastle &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opposing forwards &nbsp; <span class="dot" style="background:#ffd166"></span>Offside line</div>
+  </section>
+
+  <section class="step">
+    <h2>June 1925: two will do</h2>
+    <p>The FA tested two remedies in exhibition matches, one per half: a line forty yards from goal beyond which nobody could be offside, or a rule needing only two defenders instead of three. At a meeting in London that June it chose the second, Scotland followed, and the International Board adopted it for 1925–26. Now the offside line sat at the deeper full-back. When McCracken stepped up there was nobody left behind him, so a misjudgement sent the forward clean through against the goalkeeper. Goals per game jumped from 2.58 to 3.69 in a single season. Willy Meisl, Hugo's younger brother, saw the moment football lost its innocence.</p>
+    <blockquote>‘the crack of a shot that started an avalanche’ — Willy Meisl</blockquote>
+    <div class="legend"><span class="dot" style="background:#f2f2f2"></span>Newcastle &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opposing forwards &nbsp; <span class="dot" style="background:#ffd166"></span>Offside line</div>
+  </section>
+
+  <section class="step">
+    <h2>3 October 1925: Newcastle 7, Arsenal 0</h2>
+    <p>With space to run into, the game stretched and the short pass gave way to the long ball. Early results were freakish: Arsenal beat Leeds 4–1 on 26 September and were thrashed at St James' Park a week later. Newcastle's centre-half Charlie Spencer barely crossed halfway, yet he snuffed out Arsenal's attacks at source and let his side dominate the ball. Charlie Buchan, the inside-right Chapman had bought from Sunderland for £2,000 plus £100 a goal (he scored twenty-one, so Sunderland got £4,100), told his new manager that this was a team without a plan and threatened to go back north and retire.</p>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Arsenal 2-3-5 &nbsp; <span class="dot" style="background:#f2f2f2"></span>Newcastle, Spencer deep</div>
+  </section>
+
+  <section class="step">
+    <h2>Chapman, the planner</h2>
+    <p>Chapman was a colliery-town journeyman who wore pale yellow boots so team-mates could pick him out. As a manager he became Britain's first modern one, controlling signings, selection, tactics, even the half-time gramophone. At Northampton in 1908 his first big idea was to drop his side back, not to defend but to draw opponents out and open space ahead; they won the Southern League with ninety goals. At Huddersfield he bought Clem Stephenson, who beat the offside trap by retreating into his own half before springing forward, and won the 1922 Cup with centre-half Tom Wilson used as a spoiler. The FA expressed its deep regret.</p>
+    <blockquote>‘a team can attack for too long’ — Herbert Chapman</blockquote>
+    <div class="legend"><span class="dot" style="background:#4cc9f0"></span>Huddersfield &nbsp; <span class="dot" style="background:#9aa3b2"></span>Opponents &nbsp; <span class="dot" style="background:#ffd166"></span>Space opened behind them</div>
+  </section>
+
+  <section class="step">
+    <h2>The centre-half drops</h2>
+    <p>Buchan had learned from his Sunderland team-mate Charlie Thomson what a defensive centre-half could do, and had argued all season that the new law demanded one. After the 7–0, Chapman agreed. Jack Butler was told to rein in his creative instincts and sit between the full-backs, who moved wider to pick up the wingers. Arsenal won 4–1 at West Ham two days later and finished second, then the best a London club had ever done. When opponents began to exploit Butler's limits as a defender, Chapman found Herbie Roberts, a gangling ginger wing-half from Oswestry Town, for £200. His whole job was to intercept everything down the middle and head it or pass it short.</p>
+    <blockquote>‘intelligent and, even more important, he did what he was told’ — Tom Whittaker on Roberts</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Arsenal &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opposing centre-forward &nbsp; <span class="dot" style="background:#ffd166"></span>The gap left in midfield</div>
+  </section>
+
+  <section class="step">
+    <h2>Filling the gap: the W and the M</h2>
+    <p>A withdrawn centre-half left the side a man short in midfield. Buchan wanted to drop back himself from inside-right, which would have made a lopsided 3-3-4, but Chapman prized his goals too highly and handed the withdrawn role to Andy Neil, a third-team player who could stand with his foot on the ball while he made up his mind. Arsenal were not the first to think of it: within weeks of the new season the W formation was being discussed in dressing rooms from Southampton to Raith Rovers. They simply used it more consistently. By 1930 both inside-forwards sat deep, full-backs took the wingers and wing-halves took the inside-forwards: the 2-3-5 had become a 3-2-2-3.</p>
+    <blockquote>‘as slow as a funeral’ — Chapman on Andy Neil</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Arsenal &nbsp; <span class="dot" style="background:#ffd166"></span>The W and the M</div>
+  </section>
+
+  <section class="step">
+    <h2>Alex James, the key man</h2>
+    <p>Buchan retired in 1928 and Chapman replaced him with a diminutive Scot from Preston, Alex James, for £9,000. James had scored twice as one of the Wembley Wizards who beat England 5–1 that March, but at Arsenal his job changed. Economical of movement, he dropped near his own penalty area to receive the ball, ideally played to him quickly from the back, then distributed it at pace to the forwards. Bernard Joy, who played alongside him, thought him the most intelligent player he ever shared a pitch with. The club's own history is blunter: nobody should underestimate him, he was simply the key man.</p>
+    <blockquote>‘the knack of thinking two or three moves ahead’ — Bernard Joy on James</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Arsenal W-M &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opponents</div>
+  </section>
+
+  <section class="step">
+    <h2>Retreat, hold, thrust</h2>
+    <p>Arsenal's style was built on the counter. They drew opponents on by retreating and funnelling towards their own goal, held the attack at the edge of the penalty box, then broke with long passes to the wingers, aiming to have a spare man in each penalty area at every moment. The silverware followed exactly as Chapman had promised: the FA Cup in 1930, his fifth season, then the league in 1931 and 1933, with a controversial Cup final defeat in between. Brian Glanville saw a machine; Highbury's art deco stands, the clock, the white sleeves and the Friday tactics-board sessions all belonged to the same modernist age.</p>
+    <blockquote>‘The secret is not attack, but counter-attack’ — Bernard Joy</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Arsenal W-M &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opponents &nbsp; <span class="dot" style="background:#ffd166"></span>Hold them here</div>
+  </section>
+
+  <section class="step">
+    <h2>A system, copied everywhere</h2>
+    <p>Chapman caught a chill at Bury on New Year's Day 1934, insisted on scouting Sheffield Wednesday and watching the reserves, and died of pneumonia on 6 January. Arsenal won the title that spring and again the next year, three in a row. The W-M was copied all over the world, but stoppers like Roberts were easy to find and inside-forwards like James were not; Jimmy Hogan blamed the imitation for the long-ball game that ruined British football. Chapman never apologised for winning, yet his posthumous writings mourned a time when players had licence to display their arts and crafts rather than serve a system.</p>
+    <blockquote>‘Why change a winning system?’ — Herbert Chapman</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Arsenal 3-2-2-3 &nbsp; <span class="dot" style="background:#4cc9f0"></span>The 2-3-5 it replaced</div>
+  </section>
+</main>
+<footer class="chapter-nav"><a href="ch02.html">← Chapter 2: The Waltz and the Tango</a><a href="ch04.html">Chapter 4: How Fascism Destroyed the Coffee House →</a></footer>
+
+<script type="module">
+import { createApp, team, reshape, formation, steps, tween, THREE, W } from './pitch.js';
+
+const app = createApp(document.getElementById('stage'));
+window.app = app;
+
+const RED = 0xe63946, WHITE = 0xf2f2f2, BLUE = 0x4cc9f0, GREY = 0x9aa3b2, GOLD = 0xffd166;
+// Index order of team()/formation() for either side: GK, backs, half-backs, forwards, each line right to left.
+const ROLES = ['GK', 'RB', 'LB', 'RH', 'CH', 'LH', 'OR', 'IR', 'CF', 'IL', 'OL'];
+const named = (names) => ROLES.map((r, i) => names[i] || r);
+
+// Hand-placed positions for a team defending z<0 and attacking +z (its right is x<0),
+// used where the exact geometry matters: the staggered Newcastle backs and Arsenal's W-M.
+const PYR = { GK: [0, -49], RB: [-14, -36], LB: [14, -36], RH: [-20, -16], CH: [0, -14], LH: [20, -16],
+              OR: [-29, 16], IR: [-13, 18], CF: [0, 20], IL: [13, 18], OL: [29, 16] };
+const WM  = { GK: [0, -49], RB: [-22, -37], CH: [0, -39], LB: [22, -37], RH: [-13, -20], LH: [13, -20],
+              OR: [-30, 22], IR: [-12, -2], CF: [0, 26], IL: [12, -2], OL: [30, 22] };
+const THIRD = { ...PYR, CH: WM.CH, RB: WM.RB, LB: WM.LB };   // centre-half dropped, backs wide, forwards untouched
+
+// ---- scene plumbing ------------------------------------------------------
+// Every scene rebuilds from scratch (reader scrolls both ways). `run` invalidates
+// any timeout chain still pending from a previous scene.
+let run = 0, timers = [];
+const after = (ms, fn) => { const me = run; timers.push(setTimeout(() => { if (me === run) fn(); }, ms)); };
+const every = (period, fn) => { const tick = () => { fn(); after(period, tick); }; tick(); };
+function reset() {
+  run++; timers.forEach(clearTimeout); timers = [];
+  app.clear(); app.onFrame.length = 0; app.tweens.clear();
+  app.controls.autoRotate = false;
+}
+
+// Eleven (or fewer) players keyed by role, plus place(positions, seconds) to move any subset.
+function squad(color, pos, names = {}) {
+  const sq = {};
+  for (const [role, [x, z]] of Object.entries(pos)) sq[role] = app.player({ color, x, z, label: names[role] || role });
+  sq.place = (p, d = 1.4) => { for (const [r, [x, z]] of Object.entries(p)) sq[r] && sq[r].moveTo(x, z, d); };
+  return sq;
+}
+// A name caption that follows a player (for surnames too long for the player label).
+function tag(p, text, color = '#ffd166') {
+  const s = app.label(text, { color, size: 34 }); s.scale.set(12, 6, 1);
+  app.onFrame.push(() => s.position.set(p.position.x, 9.5, p.position.z));
+  return s;
+}
+function flag(text, opts) { const s = app.label(text, opts); s.visible = false; return s; }
+// Remove one dynamic object early (e.g. a pass arrow at the end of a loop cycle).
+function drop(o) { if (!o) return; app.scene.remove(o); const k = app.dynamic.indexOf(o); if (k >= 0) app.dynamic.splice(k, 1); }
+
+// Translucent wall across the pitch showing where the offside line sits.
+function offsideLine(z, text) {
+  const g = new THREE.Group();
+  const wall = new THREE.Mesh(new THREE.BoxGeometry(W + 6, 2.4, 0.12),
+    new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.25, depthWrite: false }));
+  wall.position.y = 1.2;
+  const stripe = new THREE.Mesh(new THREE.PlaneGeometry(W + 6, 0.5),
+    new THREE.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.9, depthWrite: false, side: THREE.DoubleSide }));
+  stripe.rotation.x = -Math.PI / 2; stripe.position.y = 0.07;
+  const lbl = app.label(text, { size: 30 }); app.scene.remove(lbl); lbl.position.set(W / 2 + 8, 3, 0);
+  g.add(wall, stripe, lbl); g.position.z = z;
+  g.moveTo = (z, d = 1) => tween(app, g.position, new THREE.Vector3(0, 0, z), d);
+  app.scene.add(g); app.dynamic.push(g);
+  return g;
+}
+// Line joining players, redrawn every frame so it follows them (draws the W and the M).
+function link(players) {
+  const geo = new THREE.BufferGeometry().setFromPoints(players.map(() => new THREE.Vector3()));
+  const line = new THREE.Line(geo, new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.85 }));
+  app.scene.add(line); app.dynamic.push(line);
+  app.onFrame.push(() => {
+    const a = geo.attributes.position;
+    players.forEach((p, i) => a.setXYZ(i, p.position.x, 0.4, p.position.z));
+    a.needsUpdate = true;
+  });
+}
+const mark = (p, on) => { p.userData.ring.material.color.set(on ? 0xff3b3b : BLUE); p.highlight(on); };
+
+// Newcastle's staggered defence and the five forwards facing it (they attack toward -z).
+function buildTrap() {
+  const nu = squad(WHITE, { GK: [0, -49], LB: [9, -33], RB: [-8, -12], RH: [-22, 2], CH: [5, 1], LH: [22, 2] });
+  tag(nu.RB, 'McCracken'); tag(nu.LB, 'Hudspeth', '#98a2b3');
+  const fw = ['OL', 'IL', 'CF', 'IR', 'OR'].map((label, i) => app.player({ color: BLUE, label, x: -28 + 14 * i, z: -9 }));
+  ['LH', 'CH', 'RH'].forEach((label, i) => app.player({ color: BLUE, label, x: -20 + 20 * i, z: 8 }));
+  const ball = app.ball(); ball.position.set(0, 0.5, 2);
+  return { nu, fw, ball };
+}
+
+// ---- scenes ----------------------------------------------------------------
+
+// Hero: the trap, set and waiting.
+function hero() {
+  reset();
+  buildTrap(); offsideLine(-12, '3 needed');
+  app.flyTo([45, 28, -105], [0, 0, -12]);
+}
+
+// 0. Three-player rule: the offside line is the advanced full-back, and it moves with him.
+function sceneTrap() {
+  reset();
+  const { nu, fw, ball } = buildTrap();
+  const line = offsideLine(-12, '3 needed');
+  app.zone({ x: 0, z: -3, w: W, h: 26, color: GOLD, opacity: 0.1 });
+  app.label('the sliver', { x: W / 2 + 8, z: -3, y: 8, size: 30, color: '#98a2b3' });
+  const off = flag('OFFSIDE', { x: 0, z: -9, y: 10, color: '#ff5d5d', size: 44 });
+  every(5400, () => {
+    after(700, () => { nu.RB.moveTo(-8, -5, 0.8); line.moveTo(-5, 0.8); ball.moveTo(-12, 3, 0.7); });
+    after(1600, () => { off.visible = true; fw.forEach((p) => mark(p, true)); });
+    after(2900, () => { off.visible = false; fw.forEach((p) => { mark(p, false); p.moveTo(p.position.x, -1.5, 0.9); }); ball.moveTo(10, 4, 0.7); });
+    after(4100, () => { nu.RB.moveTo(-8, -12, 1); line.moveTo(-12, 1); fw.forEach((p) => p.moveTo(p.position.x, -9, 1)); ball.moveTo(0, 2, 0.7); });
+  });
+  app.flyTo([50, 48, -80], [0, 0, -10]);
+}
+
+// 1. Two-player rule: the line drops to Hudspeth; McCracken steps up and the forward runs through.
+function sceneTwo() {
+  reset();
+  const { nu, fw, ball } = buildTrap();
+  offsideLine(-33, '2 needed');
+  const cf = fw[2];
+  ball.position.set(0, 0.5, 8);
+  const goal = flag('GOAL', { x: 0, z: -46, y: 10, size: 44 });
+  app.label('2.58 → 3.69', { x: W / 2 + 8, z: -40, y: 9, size: 34, color: '#e9ecf1' });
+  app.label('goals a game', { x: W / 2 + 8, z: -40, y: 5, size: 28, color: '#98a2b3' });
+  every(6000, () => {
+    after(400, () => nu.RB.moveTo(-8, -5, 0.8));
+    after(1200, () => { ball.moveTo(0, -26, 1, 3); cf.moveTo(0, -27, 1.2); cf.highlight(true); });
+    after(2400, () => { ball.moveTo(0, -42, 0.9); cf.moveTo(0, -41, 0.9); nu.LB.moveTo(5, -40, 0.9); nu.GK.moveTo(0, -46, 0.6); });
+    after(3300, () => ball.moveTo(2, -52.5, 0.45));
+    after(3750, () => { goal.visible = true; });
+    after(4900, () => {
+      goal.visible = false; cf.highlight(false); cf.moveTo(0, -9, 0.8);
+      nu.RB.moveTo(-8, -12, 0.8); nu.LB.moveTo(9, -33, 0.8); nu.GK.moveTo(0, -49, 0.6); ball.moveTo(0, 8, 0.7);
+    });
+  });
+  app.flyTo([72, 32, -20], [0, 0, -26]);
+}
+
+// 2. Newcastle 7-0 Arsenal: two pyramids, but Spencer sits deep and kills each attack at source.
+function sceneSevenNil() {
+  reset();
+  const ars = team(app, '2-3-5', { color: RED, labels: named({ 7: 'Buchan' }) });
+  const nu = team(app, '2-3-5', { side: -1, color: WHITE, labels: named({ 4: 'Spencer' }) });
+  const spencer = nu[4]; spencer.moveTo(0, 37, 1.2).highlight(true);
+  app.label('7–0', { x: 0, z: 48, y: 12, color: '#f2f2f2', size: 44 });
+  const ball = app.ball();
+  const targets = [7, 9, 8];                              // Buchan, inside-left, centre-forward
+  let k = 0, clearance;
+  every(5000, () => {
+    const t = ars[targets[k++ % targets.length]], x = t.position.x;
+    ball.position.set(0, 0.5, -3);
+    after(300, () => ball.moveTo(x, 33.5, 0.9, 2));
+    after(1300, () => { ball.moveTo(x * 0.3, 40, 0.8, 1.5); spencer.moveTo(x * 0.3, 38.5, 0.8); });
+    after(2200, () => { clearance = app.arrow([x * 0.3, 38], [14.45, -30], WHITE); ball.moveTo(14.45, -31, 1.3, 6); });
+    after(4000, () => { drop(clearance); spencer.moveTo(0, 37, 0.8); });
+  });
+  app.flyTo([35, 55, -105], [0, 0, 5]);
+}
+
+// 3. Chapman's Huddersfield: drop back to draw them on, then Stephenson springs from his own half.
+function sceneChapman() {
+  reset();
+  const hud = team(app, '2-3-5', { color: BLUE, labels: named({ 4: 'Wilson' }) });
+  const opp = team(app, '2-3-5', { side: -1, color: GREY });
+  tag(hud[9], 'Stephenson');
+  const deep = formation('2-3-5', 1, { depth: 0.55 });   // same shape, pulled back into its own half
+  const space = app.zone({ x: 0, z: 32, w: 44, h: 26, color: GOLD, opacity: 0 });
+  const spaceLbl = flag('space', { x: 0, z: 32, y: 6, size: 36 });
+  const ball = app.ball(); ball.position.set(0, 0.5, 6);
+  every(7000, () => {
+    after(200, () => {
+      deep.forEach(([x, z], i) => i && i !== 9 && hud[i].moveTo(x, z, 1.6));
+      hud[9].moveTo(12, -6, 1.6);                          // Stephenson into his own half
+      opp[1].moveTo(28.9, 10, 1.6); opp[2].moveTo(-28.9, 26, 1.6);   // one back steps up, the other covers
+      for (let i = 3; i <= 5; i++) opp[i].moveTo(opp[i].position.x, -8, 1.6);
+      for (let i = 6; i <= 10; i++) opp[i].moveTo(opp[i].position.x, -26, 1.6);
+      ball.moveTo(-14.45, -24, 1.6);
+    });
+    after(2000, () => { space.material.opacity = 0.15; spaceLbl.visible = true; hud[4].moveTo(-9, -24, 0.6); });
+    after(2700, () => { hud[4].highlight(true); ball.moveTo(12, -5, 0.6, 1.5); });
+    after(3500, () => { hud[4].highlight(false); hud[9].highlight(true); hud[9].moveTo(8, 32, 1.5); ball.moveTo(8, 30, 1.4, 5); });
+    after(5100, () => ball.moveTo(-2, 52.5, 0.5));
+    after(5900, () => {
+      hud[9].highlight(false); space.material.opacity = 0; spaceLbl.visible = false;
+      reshape(hud, '2-3-5', 1, 0.8); reshape(opp, '2-3-5', -1, 0.8); ball.moveTo(0, 6, 0.8);
+    });
+  });
+  app.flyTo([-75, 50, -55], [0, 0, 0]);
+}
+
+// 4. The third back: the centre-half drops between the full-backs and a hole opens in midfield.
+function sceneThirdBack() {
+  reset();
+  const ars = squad(RED, PYR);
+  const butler = tag(ars.CH, 'Butler');
+  const gap = app.zone({ x: 0, z: -15, w: 34, h: 16, color: GOLD, opacity: 0 });
+  const gapLbl = flag('midfield gap', { x: 0, z: -15, y: 6, size: 30 });
+  app.player({ color: BLUE, x: 0, z: 8, label: 'CF' });
+  const ball = app.ball(); ball.position.set(0, 0.5, 6);
+  after(700, () => { ars.place({ CH: WM.CH, RB: WM.RB, LB: WM.LB }, 1.4); ars.CH.highlight(true); });
+  after(2300, () => { gap.material.opacity = 0.16; gapLbl.visible = true; });
+  after(3600, () => { butler.visible = false; tag(ars.CH, 'Roberts'); app.label('£200', { x: 12, z: -40, y: 5, size: 34, color: '#98a2b3' }); });
+  after(4400, () => every(4200, () => {                 // balls down the middle: step in, head it short
+    ball.moveTo(0, -31, 1.1, 5);
+    after(900, () => ars.CH.moveTo(0, -32, 0.5));
+    after(1400, () => ball.moveTo(-20, -16, 0.7, 2));
+    after(2400, () => ball.moveTo(0, 6, 1, 4));
+    after(3300, () => ars.CH.moveTo(0, -39, 0.6));
+  }));
+  app.flyTo([0, 65, -118], [0, 0, -14]);
+}
+
+// 5. Player by player into the W-M: Buchan's 3-3-4 rejected, Neil withdrawn, then both inside-forwards.
+function sceneWM() {
+  reset();
+  const ars = squad(RED, THIRD, { CH: 'Roberts', IR: 'Buchan', IL: 'Neil' });
+  const q = flag('3-3-4?', { x: -12, z: -2, y: 12, size: 40, color: '#ff8fa3' });
+  after(600, () => { ars.IR.moveTo(-12, -2, 1.2); ars.IR.highlight(true); });
+  after(1900, () => { q.visible = true; });
+  after(3200, () => { q.visible = false; ars.IR.highlight(false); ars.IR.moveTo(-13, 18, 1); ars.IL.moveTo(12, -2, 1.2); ars.IL.highlight(true); });
+  after(4800, () => { ars.IL.highlight(false); ars.place(WM, 1.6); });
+  after(6600, () => {
+    link([ars.RB, ars.RH, ars.CH, ars.LH, ars.LB]); link([ars.OR, ars.IR, ars.CF, ars.IL, ars.OL]);
+    app.label('M', { x: 0, z: -29, y: 5, size: 72 }); app.label('W', { x: 0, z: 12, y: 5, size: 72 });
+    app.label('3-2-2-3', { x: W / 2 + 8, z: -8, y: 6, size: 40, color: '#e9ecf1' });
+  });
+  app.flyTo([0, 100, -62], [0, 0, -6]);
+}
+
+// 6. Alex James: Roberts intercepts and plays short; James turns and hits the telling pass.
+function sceneJames() {
+  reset();
+  const ars = squad(RED, WM, { CH: 'Roberts', IL: 'James' });
+  team(app, '2-3-5', { side: -1, color: BLUE });
+  const ball = app.ball();
+  let pass;
+  every(6200, () => {
+    ball.position.set(0, 0.5, 4);
+    after(300, () => { ball.moveTo(0, -30, 1, 3); ars.CH.moveTo(0, -31, 0.9); });
+    after(1300, () => { ars.CH.highlight(true); ars.IL.moveTo(10, -24, 0.6); });
+    after(1900, () => { ball.moveTo(10, -24, 0.5, 1.5); ars.CH.highlight(false); });
+    after(2500, () => ars.IL.highlight(true));
+    after(2900, () => { pass = app.arrow([10, -24], [-30, 26], GOLD); ball.moveTo(-30, 26, 1, 5); ars.OR.moveTo(-30, 30, 1.1); ars.IL.highlight(false); });
+    after(4000, () => { ball.moveTo(0, 42, 0.7, 2.5); ars.CF.moveTo(0, 42, 0.8); });
+    after(4800, () => ball.moveTo(-2, 52.5, 0.4));
+    after(5400, () => { drop(pass); ars.place(WM, 0.6); });
+  });
+  app.flyTo([50, 42, -70], [0, 0, -4]);
+}
+
+// 7. Counter-attack: retreat and funnel, hold at the box, thrust to the winger.
+function sceneCounter() {
+  reset();
+  const ars = squad(RED, WM, { CH: 'Roberts', IL: 'James' });
+  const opp = team(app, '2-3-5', { side: -1, color: BLUE });
+  const funnel = { RB: [-16, -44], CH: [0, -46], LB: [16, -44], RH: [-11, -38], LH: [11, -38],
+                   IR: [-7, -30], IL: [7, -30], OR: [-24, -20], CF: [0, -22], OL: [24, -20] };
+  app.zone({ x: 0, z: -36, w: W, h: 1, color: GOLD, opacity: 0.6 });
+  app.label('hold here', { x: W / 2 + 8, z: -36, y: 4, size: 30 });
+  const ball = app.ball(); ball.position.set(0, 0.5, 4);
+  const goal = flag('GOAL', { x: 0, z: 46, y: 10, size: 44 });
+  let thrust;
+  every(7600, () => {
+    after(200, () => {
+      ars.place(funnel, 1.6);                              // retreat and funnel
+      opp[1].moveTo(28.9, 14, 1.6); opp[2].moveTo(-28.9, 14, 1.6);
+      for (let i = 3; i <= 5; i++) opp[i].moveTo(opp[i].position.x, -8, 1.6);
+      ball.moveTo(-14.45, -30, 1.4);                       // to their inside-left
+    });
+    after(1900, () => { ball.moveTo(0, -36, 0.6); ars.CH.moveTo(0, -37, 0.6); });
+    after(2600, () => { ars.CH.highlight(true); ball.moveTo(7, -30, 0.5, 1); });
+    after(3200, () => {
+      ars.CH.highlight(false); thrust = app.arrow([7, -30], [26, 12], GOLD);
+      ball.moveTo(26, 12, 1.1, 7); ars.OL.moveTo(27, 16, 1.2);
+      ars.CF.moveTo(0, 30, 1.6); ars.IR.moveTo(-10, 18, 1.7); ars.OR.moveTo(-28, 22, 1.7);
+    });
+    after(4400, () => { ars.OL.moveTo(26, 36, 0.8); ball.moveTo(25, 34, 0.8); });
+    after(5300, () => { ball.moveTo(0, 42, 0.6, 2.5); ars.CF.moveTo(0, 42, 0.7); });
+    after(6000, () => ball.moveTo(2, 52.5, 0.4));
+    after(6300, () => { goal.visible = true; });
+    after(7000, () => { goal.visible = false; drop(thrust); ars.place(WM, 0.5); reshape(opp, '2-3-5', -1, 0.5); ball.moveTo(0, 4, 0.5); });
+  });
+  app.flyTo([-62, 48, -100], [0, 0, -8]);
+}
+
+// 8. The finished machine against the shape it replaced, left to orbit.
+function sceneLegacy() {
+  reset();
+  const ars = squad(RED, WM, { CH: 'Roberts', IL: 'James' });
+  team(app, '2-3-5', { side: -1, color: BLUE });
+  link([ars.RB, ars.RH, ars.CH, ars.LH, ars.LB]); link([ars.OR, ars.IR, ars.CF, ars.IL, ars.OL]);
+  app.label('3-2-2-3', { x: 0, z: -12, y: 10, size: 40, color: '#e9ecf1' });
+  app.label('2-3-5', { x: 0, z: 14, y: 10, size: 40, color: '#4cc9f0' });
+  app.controls.autoRotate = true;
+  app.flyTo([70, 55, -90], [0, 0, 0]);
+}
+
+const scenes = [sceneTrap, sceneTwo, sceneSevenNil, sceneChapman, sceneThirdBack, sceneWM, sceneJames, sceneCounter, sceneLegacy];
+window.scenes = scenes;
+hero();
+steps((i) => scenes[i] && scenes[i]());
+</script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 19: Ghosts and the Machine — Inverting the Pyramid</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./three/three.module.min.js","three/addons/":"./three/addons/"}}</script>
+</head>
+<body>
+<nav class="top"><a href="ch18.html">← Chapter 18</a><a href="index.html">All chapters</a><a href="ch20.html">Chapter 20 →</a></nav>
+<div id="stage"></div>
+<main>
+  <header class="hero">
+    <div class="kicker">Chapter 19</div>
+    <h1>Ghosts and the Machine</h1>
+    <p>By the mid-nineties pressing and the cult of speed seemed to have killed the fantasista as surely as they had killed the winger. Instead the playmaker was hunted down by pairs of holding midfielders, reinvented inside the 4-2-3-1 and its double pivot, and finally dissolved into a game with no fixed lines. This is the chapter where the specialist gives way to the universal player.</p>
+    <p class="legend"><span class="dot" style="background:#e63946"></span>Team under discussion &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opponents &nbsp; <span class="dot" style="background:#ffd166"></span>Space, runs and passes &nbsp;·&nbsp; Drag to orbit, press Next to advance.</p>
+  </header>
+
+  <section class="step">
+    <h2>Euro 2000: the artists come back</h2>
+    <p>The mid-nineties looked bleak for the fantasista: five-man midfields, muscle over finesse, Brazil winning the 1994 World Cup with two destroyers and a penalty shoot-out. Then came Euro 2000, arguably the best tournament of the modern era. Germany, still built around the back five that Dieter Eilts had shielded in 1996, went home without a win. France put Djorkaeff, Zidane and Dugarry behind Henry; the Netherlands and Portugal packed in three creators apiece. Italy took another road, the "broken team": an attacking three excused defensive work and a defensive seven behind them, as in Zaccheroni's 1998 Milan of Weah, Bierhoff and Leonardo. It made the playmaker exalted, necessary and, in the end, impossible.</p>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Germany 1996, then France 2000, then Zaccheroni's Milan</div>
+  </section>
+
+  <section class="step">
+    <h2>The enganche, and the two men sent to stop him</h2>
+    <p>In Argentina the playmaker is the enganche, the hook, who lives between midfield and attack. Juan Carlos Lorenzo popularised the role with Onega in a 4-3-1-2 at the 1966 World Cup; Bochini, Maradona and finally Riquelme embodied it, the still point around whom everything turned. The trouble is that one creative outlet is easy to stifle, and modern shapes carry two holding midfielders at little attacking cost. Kanu was smothered by Touré and Zokora; at the 2006 World Cup Pékerman pulled Riquelme after seventy-two anonymous minutes against Germany and sent on Cambiasso, switching to 4-4-2. Stop the designated No. 10 and the creativity almost dries up.</p>
+    <blockquote>"Nobody wants playmakers, nobody buys them."</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Argentina &nbsp; <span class="dot" style="background:#4cc9f0"></span>Germany 2006</div>
+  </section>
+
+  <section class="step">
+    <h2>The width problem</h2>
+    <p>Shapes built around a single playmaker, 4-3-1-2, the diamond, 3-4-1-2, funnel everything down the middle, so a defence can sit deep and allow only long shots. Bielsa's 3-3-2-2, with Verón and Ortega behind Batistuta and López, had the same fault until he pushed one forward and one trequartista out as wingers: the 3-3-1-3 gave his No. 10 options and baffled opponents, though it left Argentina open to the counter and out of the 2002 World Cup despite dominating possession. Yugoslavia found another fix against Finland that year. At half-time the flat diamond became a 3-4-1-2, wing-backs met the Finnish wingers, a spare man appeared at the back and in midfield, and 0-0 became 2-0.</p>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Bielsa's Argentina, then Yugoslavia &nbsp; <span class="dot" style="background:#4cc9f0"></span>Finland</div>
+  </section>
+
+  <section class="step">
+    <h2>Croatia's three roads</h2>
+    <p>Croatia tried everything. In 1998 Blažević squeezed Boban, Prosinečki and Asanović into one midfield behind a back three of ball-playing stoppers and reached a World Cup semi-final. By 2006 Zlatko Kranjčar had followed Italy: to field his son Niko as a pure playmaker he needed Tudor and Kovač holding, which meant seven defenders and stodgy, predictable football. Bilić ended the debate at a stroke with four at the back, Kovač deep, Kranjčar wide, Srna on the other flank and Modrić in the middle. Modrić, as slight as any old No. 10, also organised and tracked back: the new kind of playmaker, robust and disciplined, and later a regista himself.</p>
+    <blockquote>"the most creative midfield ever"</blockquote>
+  </section>
+
+  <section class="step">
+    <h2>Why three at the back died</h2>
+    <p>Bilardo's back three was two markers on two centre-forwards plus a sweeper. Against one striker it leaves two spare men, one useful and one wasted. Nelsinho Baptista's matching software shows the knock-on: a 3-5-2 facing a 4-5-1 that becomes 4-3-3 must send its wing-backs to the wingers, so five men mind three forwards; midfield is three against three; and up front two strikers face four defenders, one of whom can step into midfield and make it four against three while keeping three against two behind. Egypt's 3-4-1-2 thrived only because Africa still played 4-4-2; a lone striker in the 2008 final left Wael Gomaa wandering like a spare part.</p>
+    <blockquote>"There's no point having three defenders covering one centre-forward."</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Team A, 3-5-2 &nbsp; <span class="dot" style="background:#4cc9f0"></span>Team B, 4-3-3</div>
+  </section>
+
+  <section class="step">
+    <h2>The creator who drops off</h2>
+    <p>British 4-4-2 pairs were either big man and quick man or creator and goalscorer, and the creator always drifted deeper. Cantona and Zola bewildered English centre-backs between the lines as Sindelar and Hidegkuti had; nobody called Sunderland's 1990 promotion side a 4-4-1-1, but with Gates behind Gabbiadini that is what it was, and Messi, a winger who cut infield, later became the image of the false nine. Push the wingers high, drop one striker off, and 4-4-2 is already 4-2-3-1: Manchester United beat Barcelona in the 1991 Cup-Winners' Cup final with Robson and Ince holding, Sharpe and Phelan wide and McClair off Hughes. Watch the forward drop, drag a centre-back out, and a runner attack the space.</p>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Manchester United 1991 &nbsp; <span class="dot" style="background:#4cc9f0"></span>Barcelona</div>
+  </section>
+
+  <section class="step">
+    <h2>El doble pivote</h2>
+    <p>In Spain 4-2-3-1 was common by 2000 and a default soon after. Once the playmaker became a second striker, a holding midfielder was detailed to pick him up (the late-nineties boom in the Makélélé role), so the deep forward drifted wide; if the holder followed, a second man dropped in as cover. Juanma Lillo, later Guardiola's mentor, was the first to use the shape deliberately, at Cultural Leonesa in 1991-92 with Sami and Teófilo Abajo as his pivots. Salamanca's players stared at it as if at a dinosaur, then won promotion. Irureta's Deportivo won the 2000 title with it, and a 3-2 home defeat by Real Madrid persuaded Ferguson his 4-4-2 was finished in Europe.</p>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>Lillo's Cultural Leonesa &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opponents in possession</div>
+  </section>
+
+  <section class="step">
+    <h2>Pressuring to play</h2>
+    <p>Lillo's 4-2-3-1 was above all a pressing shape, the most symmetrical way he could find of playing with four forwards. With the striker and the three behind him high, the midfield and the defence can play high too, so the whole team squeezes the pitch and tries to steal the ball near the opposition goal. It needs mobile players who can pass once they have won it, because the point of the pressing is the possession that follows. The pair of pivots step onto the opposing midfield, the back four sit near halfway and the front four hunt the ball-carrier. By the 2010 World Cup 4-2-3-1 had replaced 4-4-2 as football's default formation.</p>
+    <blockquote>"They're pressuring to play, not playing to pressure."</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>4-2-3-1 pressing &nbsp; <span class="dot" style="background:#4cc9f0"></span>Opponents building from the back</div>
+  </section>
+
+  <section class="step">
+    <h2>The 4-5-1 family and the end of the lines</h2>
+    <p>4-5-1 was long dismissed as the right of the weak, but it is a family, not a formation. Swap an attacking midfielder for a holder and you have the Christmas tree: Jacquet's 1998 France freed Zidane behind Deschamps, Petit and Karembeu, with Djorkaeff alongside and the derided Guivarc'h holding the ball up; Ancelotti's Milan played it with Pirlo as regista between Gattuso and Ambrosini. Mourinho's Chelsea sat Makélélé in front of the back four, shuttled Lampard and Essien, and used Duff, Cole and Robben as wingers who doubled as midfielders: sometimes 4-1-2-3, sometimes 4-1-4-1, called 4-3-3. Looser offside laws stretched the effective pitch from forty metres to sixty, and the three old bands dissolved.</p>
+    <blockquote>"There are no lines any more."</blockquote>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>France 1998, then Ancelotti's Milan, then Mourinho's Chelsea</div>
+  </section>
+
+  <section class="step">
+    <h2>Ghosts and the machine</h2>
+    <p>Sacchi saw the designated holder as a symptom of weakness: reactive football that balances stars with specialists instead of multiplying everyone's qualities, as at the galáctico Real Madrid where Zidane, Raúl and Figo would not track back. Like Lobanovskyi he wanted universality, players positioned by team-mates, opponents and space rather than by job title, and Guardiola and Klopp have since pulled the game his way. Every position changed with the playmaker: a top side now needs a centre-back who can carry the ball into midfield, and the poacher has all but vanished. Owen's gift for the shoulder of the last defender was not enough by his mid-twenties. Drogba, Henry and Ronaldo are hybrids, and they must function within the system.</p>
+    <blockquote>"In my football, the regista is whoever has the ball."</blockquote>
+  </section>
+</main>
+<footer class="chapter-nav"><a href="ch18.html">← Chapter 18: Total Recall</a><a href="ch20.html">Chapter 20: Pressing and Possession →</a></footer>
+
+<script type="module">
+import { createApp, steps } from './pitch.js';
+const app = createApp(document.getElementById('stage'));
+const RED = 0xe63946, BLUE = 0x4cc9f0, GOLD = 0xffd166;
+
+// Shapes as [x, z] for a side attacking +z: GK first, then each line from defence to attack.
+const SH = {
+  '5-1-2-2':   [[0,-49],[-28,-28],[-14,-34],[0,-37],[14,-34],[28,-28],[0,-20],[-12,-6],[12,-6],[-9,14],[9,14]],
+  '4-2-3-1':   [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[-8,-16],[8,-16],[-26,2],[0,4],[26,2],[0,18]],
+  '4-3-1-2':   [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[-16,-14],[0,-20],[16,-14],[0,0],[-10,16],[10,16]],
+  '4-4-2':     [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[-25,-8],[-8,-12],[8,-12],[25,-8],[-9,14],[9,14]],
+  '3-3-2-2':   [[0,-49],[-14,-34],[0,-37],[14,-34],[-28,-14],[0,-18],[28,-14],[-10,-2],[10,-2],[-8,16],[8,16]],
+  '3-3-1-3':   [[0,-49],[-14,-34],[0,-37],[14,-34],[-28,-14],[0,-18],[28,-14],[0,-2],[26,14],[-26,14],[0,18]],
+  '3-5-2':     [[0,-49],[-14,-34],[0,-37],[14,-34],[-30,-10],[-12,-14],[0,-18],[12,-14],[30,-10],[-9,14],[9,14]],
+  '4-3-3':     [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[0,-18],[-14,-8],[14,-8],[-26,12],[0,18],[26,12]],
+  '4-3-2-1':   [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[-14,-14],[0,-18],[14,-14],[-10,0],[10,0],[0,18]],
+};
+// Scene-specific layouts (same index order as the shape they morph from, so players glide without crossing).
+const FRA   = [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[8,-16],[-8,-16],[-26,2],[26,2],[0,4],[0,18]];
+const MIL   = [[0,-49],[-28,-12],[-14,-34],[0,-37],[14,-34],[8,-16],[-8,-16],[-10,16],[28,-12],[0,0],[10,16]];
+const YUG   = [[0,-49],[-14,-34],[0,-37],[14,-34],[-28,-12],[-8,-16],[28,-12],[8,-16],[10,16],[-10,16],[0,0]];
+const CRO06 = [[0,-49],[-14,-34],[0,-37],[14,-34],[-28,-12],[-8,-16],[8,-16],[0,0],[28,-12],[-10,16],[10,16]];
+const BILIC = [[0,-49],[-8,-34],[8,-34],[24,-31],[-24,-31],[-24,-4],[0,-20],[0,-6],[24,-4],[-9,14],[9,14]];
+const R352D = [[0,-49],[-12,-36],[0,-38],[12,-36],[-29,-24],[-12,-24],[0,-26],[12,-24],[29,-24],[-8,-4],[8,-4]];
+const B433A = [[0,49],[24,8],[8,10],[-8,10],[-24,8],[0,-6],[12,-14],[-12,-14],[28,-26],[0,-30],[-28,-26]];
+const R4231D = [[0,-49],[-22,-34],[-8,-36],[8,-36],[22,-34],[-7,-22],[7,-22],[-24,-10],[0,-12],[24,-10],[0,2]];
+const R_HIGH = [[0,-40],[-22,-2],[-8,-4],[8,-4],[22,-2],[-8,10],[8,10],[-24,22],[0,24],[24,22],[0,32]];
+const B_BUILD = [[0,49],[24,32],[8,36],[-8,36],[-24,32],[25,20],[8,18],[-8,18],[-25,20],[9,-6],[-9,-6]];
+const MILAN = [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[-14,-14],[0,-10],[16,-8],[-10,0],[10,0],[0,18]];
+const CHE   = [[0,-49],[-24,-31],[-8,-34],[8,-34],[24,-31],[-10,-6],[0,-20],[10,-6],[-26,12],[26,12],[0,18]];
+
+const mirror = (c) => c.map(([x, z]) => [-x, -z]);
+const shift = (c, dz, dx = 0) => c.map(([x, z]) => [x + dx, z + dz]);
+const L = (m) => Object.assign([], m); // sparse labels: L({ 8: 'Riquelme' })
+const squad = (coords, { color = RED, labels = [] } = {}) =>
+  coords.map(([x, z], i) => app.player({ color, x, z, label: labels[i] || String(i + 1) }));
+const move = (ps, coords, d = 1.4) => coords.forEach(([x, z], i) => ps[i] && ps[i].moveTo(x, z, d));
+const swap = (from, to, opts, d = 1.4) => { const ps = squad(from, opts); move(ps, to, d); return ps; };
+const hl = (ps, idx) => idx.forEach((i) => ps[i].highlight());
+const ballAt = (x, z) => { const b = app.ball(); b.position.set(x, 0.5, z); return b; };
+const drop = (...objs) => objs.forEach((o) => app.scene.remove(o));
+
+let run = 0;
+const start = () => { app.clear(); app.onFrame.length = 0; return ++run; };
+const at = (me, ms, fn) => setTimeout(() => { if (me === run) fn(); }, ms);
+
+// Opening state under the hero: the classic No. 10 in a 4-3-1-2.
+const intro = squad(SH['4-3-1-2']);
+intro[8].highlight();
+app.label('No. 10', { x: 0, z: 0, y: 9, size: 34 });
+app.flyTo([0, 75, -100]);
+
+const scenes = [
+  // 1. Germany 1996 back five -> France 2000 4-2-3-1 -> Italy's broken team 3-4-1-2
+  () => {
+    const me = start();
+    app.flyTo([0, 75, -100], [0, 0, -5]);
+    const ger = squad(SH['5-1-2-2'], { labels: L({ 6: 'Eilts' }) });
+    hl(ger, [6]);
+    app.label('Germany 1996', { x: 0, z: -47, y: 8, size: 30 });
+    at(me, 2200, () => {
+      app.clear();
+      const fra = swap(SH['5-1-2-2'], FRA, { labels: L({ 5: 'Vieira', 6: 'Deschamps', 7: 'Dugarry', 8: 'Djorkaeff', 9: 'Zidane', 10: 'Henry' }) });
+      hl(fra, [7, 8, 9]);
+      app.label('France 2000', { x: 0, z: -47, y: 8, size: 30 });
+    });
+    at(me, 4600, () => {
+      app.clear();
+      const mil = swap(FRA, MIL, { labels: L({ 1: 'Ziege', 5: 'Ambrosini', 6: 'Albertini', 7: 'Weah', 8: 'Helveg', 9: 'Leonardo', 10: 'Bierhoff' }) });
+      hl(mil, [7, 9, 10]);
+      app.zone({ x: 0, z: 9, w: 36, h: 26, color: GOLD, opacity: 0.2 });
+      app.zone({ x: 0, z: -27, w: 68, h: 38, color: BLUE, opacity: 0.12 });
+      app.label('attacking three', { x: 0, z: 26, y: 9, size: 28 });
+      app.label('defensive seven', { x: 0, z: -47, y: 8, size: 28 });
+    });
+  },
+
+  // 2. The enganche receives, two holders close him down, Pekerman goes 4-4-2
+  () => {
+    const me = start();
+    app.flyTo([0, 60, -45], [0, 0, 12]);
+    const ARG = shift(SH['4-3-1-2'], 14);
+    const GER = shift(mirror(SH['4-4-2']), 8);
+    const gerLabels = L({ 6: 'Ballack', 7: 'Frings' });
+    const arg = squad(ARG, { labels: L({ 8: 'Riquelme' }) });
+    const ger = squad(GER, { color: BLUE, labels: gerLabels });
+    hl(arg, [8]);
+    app.label('the hook', { x: 0, z: 14, y: 9, size: 32 });
+    const b = ballAt(0, -6);
+    at(me, 700, () => b.moveTo(0, 14, 0.9));
+    at(me, 1600, () => {
+      ger[6].moveTo(-4, 19, 1); ger[7].moveTo(4, 19, 1); hl(ger, [6, 7]);
+      app.label('two holders', { x: 0, z: 26, y: 9, size: 30 });
+    });
+    at(me, 3000, () => b.moveTo(0, -6, 0.9));
+    at(me, 4000, () => {
+      app.clear();
+      const a2 = swap(ARG, shift(SH['4-4-2'], 14), { labels: L({ 8: 'Cambiasso' }) });
+      squad(GER, { color: BLUE, labels: gerLabels });
+      hl(a2, [8]);
+      app.label('Pékerman: 4-4-2', { x: 0, z: -10, y: 9, size: 28 });
+    });
+  },
+
+  // 3. Everything down the middle -> Bielsa's 3-3-1-3 -> Yugoslavia's wing-backs meet the wingers
+  () => {
+    const me = start();
+    app.flyTo([0, 110, -30], [0, 0, 0]);
+    const arg = squad(SH['3-3-2-2'], { labels: L({ 4: 'Sorín', 5: 'Simeone', 6: 'Zanetti', 7: 'Verón', 8: 'Ortega', 9: 'C. López', 10: 'Batistuta' }) });
+    squad(shift(mirror(SH['4-4-2']), 10), { color: BLUE });
+    const fx = [
+      app.arrow([0, -18], [0, -4]), app.arrow([-10, -2], [-6, 14]), app.arrow([10, -2], [6, 14]),
+      app.zone({ x: -28, z: 4, w: 12, h: 44, color: GOLD, opacity: 0.15 }),
+      app.zone({ x: 28, z: 4, w: 12, h: 44, color: GOLD, opacity: 0.15 }),
+      app.label('no width', { x: 0, z: -47, y: 8, size: 32 }),
+    ];
+    at(me, 2400, () => {
+      drop(...fx);
+      move(arg, SH['3-3-1-3']);
+      app.arrow([10, -2], [24, 12]); app.arrow([-8, 16], [-24, 14]);
+      app.label('3-3-1-3', { x: 0, z: -47, y: 8, size: 32 });
+    });
+    at(me, 4600, () => {
+      app.clear();
+      const yug = swap(SH['3-3-1-3'], YUG, { labels: L({ 4: 'Mihajlović', 10: 'Stanković' }) });
+      const fin = squad(shift(mirror(SH['4-4-2']), -6), { color: BLUE, labels: L({ 5: 'Kolkka', 8: 'Nurmela' }) });
+      hl(yug, [4, 6]); hl(fin, [5, 8]);
+      app.arrow([-28, -12], [-25, 0]); app.arrow([28, -12], [25, 0]);
+      app.label('wing-backs v wingers', { x: 0, z: -47, y: 8, size: 24 });
+    });
+  },
+
+  // 4. Croatia 1998 (three playmakers) -> 2006 (seven defenders) -> Bilic's four at the back
+  () => {
+    const me = start();
+    app.flyTo([50, 25, -70], [0, 0, -10]);
+    const c98 = squad(SH['3-5-2'], { labels: L({ 5: 'Boban', 6: 'Prosinečki', 7: 'Asanović' }) });
+    hl(c98, [5, 6, 7]);
+    app.label('1998', { x: 0, z: -47, y: 8, size: 34 });
+    at(me, 2200, () => {
+      app.clear();
+      const c06 = swap(SH['3-5-2'], CRO06, { labels: L({ 4: 'Babić', 5: 'Tudor', 6: 'Kovač', 7: 'N. Kranjčar', 8: 'Srna' }) });
+      hl(c06, [5, 6]);
+      app.zone({ x: 0, z: -27, w: 68, h: 38, color: BLUE, opacity: 0.12 });
+      app.label('2006: seven defenders', { x: 0, z: -47, y: 8, size: 24 });
+    });
+    at(me, 4600, () => {
+      app.clear();
+      const bil = swap(CRO06, BILIC, { labels: L({ 5: 'Kranjčar', 6: 'Kovač', 7: 'Modrić', 8: 'Srna' }) });
+      hl(bil, [7]);
+      app.label('Bilić: four at the back', { x: 0, z: -47, y: 8, size: 24 });
+    });
+  },
+
+  // 5. Nelsinho's matchup: 3-5-2 v 4-3-3, and the spare full-back steps into midfield
+  () => {
+    const me = start();
+    app.flyTo([-70, 45, -30], [0, 0, -14]);
+    squad(R352D);
+    const b = squad(B433A, { color: BLUE });
+    app.zone({ x: 0, z: -30, w: 68, h: 16, color: RED, opacity: 0.12 });
+    app.zone({ x: 0, z: -15, w: 68, h: 12, color: GOLD, opacity: 0.12 });
+    app.zone({ x: 0, z: 2, w: 68, h: 16, color: BLUE, opacity: 0.12 });
+    app.label('5 v 3', { x: 44, z: -30, y: 6, size: 34 });
+    const mid = app.label('3 v 3', { x: 44, z: -15, y: 6, size: 34 });
+    app.label('2 v 4', { x: 44, z: 2, y: 6, size: 34 });
+    const ball = ballAt(0, -6);
+    at(me, 2200, () => {
+      b[4].moveTo(-18, -8, 1.3); b[4].highlight();
+      app.arrow([-24, 8], [-18, -6], GOLD);
+      app.label('spare full-back', { x: -30, z: -4, y: 8, size: 26 });
+    });
+    at(me, 3600, () => {
+      ball.moveTo(-18, -8, 0.8);
+      drop(mid);
+      app.label('3 v 4', { x: 44, z: -15, y: 6, size: 34 });
+    });
+  },
+
+  // 6. McClair drops into the hole, the centre-back follows, Phelan runs into the space
+  () => {
+    const me = start();
+    app.flyTo([-30, 40, -20], [0, 0, 22]);
+    const utd = squad(shift(SH['4-4-2'], 12), { labels: L({ 5: 'Sharpe', 6: 'Robson', 7: 'Ince', 8: 'Phelan', 9: 'Hughes', 10: 'McClair' }) });
+    const bar = squad(mirror(SH['4-4-2']), { color: BLUE });
+    hl(utd, [10]);
+    app.zone({ x: 0, z: 21, w: 44, h: 12, color: GOLD, opacity: 0.18 });
+    app.label('the hole', { x: -26, z: 21, y: 8, size: 30 });
+    const b = ballAt(8, 0);
+    at(me, 400, () => utd[10].moveTo(3, 18, 1.2));
+    at(me, 1200, () => { bar[2].moveTo(5, 25, 1.1); bar[2].highlight(); });
+    at(me, 1500, () => b.moveTo(3, 18, 0.8));
+    at(me, 2300, () => {
+      utd[8].moveTo(14, 36, 1.4); utd[9].moveTo(-18, 32, 1.4);
+      app.arrow([25, 4], [14, 36], GOLD);
+      app.label('into the space', { x: 22, z: 42, y: 8, size: 28 });
+    });
+    at(me, 3000, () => b.moveTo(13, 34, 1.0, 2.5));
+    at(me, 4200, () => b.moveTo(2, 50, 0.6));
+  },
+
+  // 7. Lillo's double pivot screens the space in front of the back four as the ball moves across
+  () => {
+    const me = start();
+    app.flyTo([0, 55, -85], [0, 0, -16]);
+    const leo = squad(R4231D, { labels: L({ 5: 'Sami', 6: 'Abajo', 7: 'Nuñez', 8: 'Ortiz', 9: 'Moreno', 10: 'Latapia' }) });
+    const opp = squad(shift(mirror(SH['4-2-3-1']), -14), { color: BLUE });
+    hl(leo, [5, 6]);
+    app.zone({ x: 0, z: -26, w: 40, h: 12, color: RED, opacity: 0.18 });
+    app.label('doble pivote', { x: 0, z: -47, y: 8, size: 30 });
+    const b = ballAt(26, -16);
+    const pivots = (x) => { leo[5].moveTo(x - 7, -22, 1); leo[6].moveTo(x + 7, -22, 1); };
+    pivots(8); opp[8].moveTo(6, -19, 1);
+    at(me, 1500, () => { b.moveTo(8, 2, 0.9); pivots(0); opp[8].moveTo(0, -18, 1); });
+    at(me, 3000, () => { b.moveTo(-26, -16, 0.9); pivots(-8); opp[8].moveTo(-6, -19, 1); });
+    at(me, 4500, () => {
+      b.moveTo(-5, -20, 0.7); leo[5].moveTo(-5, -20, 0.6);
+      app.label('screened', { x: 0, z: -36, y: 8, size: 30 });
+    });
+  },
+
+  // 8. The 4-2-3-1 press: front four hunt the ball, pivots step up, back four squeeze to halfway
+  () => {
+    const me = start();
+    app.flyTo([-45, 40, 0], [0, 0, 22]);
+    const p = squad(R_HIGH);
+    squad(B_BUILD, { color: BLUE });
+    app.zone({ x: 0, z: 26, w: 68, h: 22, color: GOLD, opacity: 0.12 });
+    app.label('press high', { x: 0, z: 44, y: 8, size: 30 });
+    const b = ballAt(0, 49);
+    at(me, 500, () => { b.moveTo(8, 36, 0.8); p[10].moveTo(5, 31, 0.9); p[8].moveTo(-2, 28, 0.9); });
+    at(me, 1600, () => {
+      b.moveTo(24, 32, 0.8); p[9].moveTo(21, 27, 0.9); p[10].moveTo(13, 32, 0.9);
+      p[5].moveTo(2, 12, 1); p[6].moveTo(16, 12, 1);
+      [[-16, -2], [-2, -4], [14, -4], [28, -2]].forEach(([x, z], i) => p[i + 1].moveTo(x, z, 1));
+    });
+    at(me, 2800, () => { b.moveTo(25, 20, 0.8); p[6].moveTo(22, 16, 0.8); });
+    at(me, 3600, () => { b.moveTo(21, 16, 0.5); p[6].highlight(); app.label('stolen', { x: 22, z: 8, y: 8, size: 30 }); });
+    at(me, 4300, () => b.moveTo(13, 32, 0.7));
+    at(me, 5100, () => b.moveTo(2, 50, 0.6));
+  },
+
+  // 9. France 98 Christmas tree -> Ancelotti's Milan -> Mourinho's Chelsea 4-1-2-3 / 4-1-4-1
+  () => {
+    const me = start();
+    app.flyTo([110, 40, 0], [0, 0, -5]);
+    const fra = squad(SH['4-3-2-1'], { labels: L({ 5: 'Petit', 6: 'Deschamps', 7: 'Karembeu', 8: 'Zidane', 9: 'Djorkaeff', 10: "Guivarc'h" }) });
+    hl(fra, [8]);
+    app.label('Christmas tree', { x: 0, z: -47, y: 8, size: 28 });
+    at(me, 600, () => fra[8].moveTo(-22, 6, 1.1));
+    at(me, 1400, () => fra[8].moveTo(2, 10, 1.1));
+    at(me, 2200, () => {
+      app.clear();
+      const mil = swap(SH['4-3-2-1'], MILAN, { labels: L({ 5: 'Gattuso', 6: 'Pirlo', 7: 'Ambrosini', 8: 'Kaká', 9: 'Seedorf' }) });
+      hl(mil, [6]);
+      app.label('Pirlo, regista', { x: 0, z: -47, y: 8, size: 28 });
+    });
+    at(me, 4000, () => {
+      app.clear();
+      const che = swap(MILAN, CHE, { labels: L({ 5: 'Lampard', 6: 'Makélélé', 7: 'Essien', 8: 'Duff', 9: 'Robben', 10: 'Drogba' }) });
+      hl(che, [6]);
+      app.label('Chelsea: 4-1-2-3', { x: 0, z: -47, y: 8, size: 26 });
+      at(me, 1300, () => {
+        che[8].moveTo(-26, -6, 1.2); che[9].moveTo(26, -6, 1.2);
+        app.label('4-1-4-1', { x: 0, z: -12, y: 9, size: 30 });
+      });
+    });
+  },
+
+  // 10. The regista is whoever has the ball; a centre-back carries; the striker is not just a striker
+  () => {
+    const me = start();
+    app.flyTo([0, 75, -100], [0, 0, 0]);
+    const t = squad(SH['4-3-3']);
+    app.label('ball = regista', { x: 0, z: -47, y: 8, size: 30 });
+    const b = ballAt(8, -34);
+    let cur = 3; t[3].highlight();
+    [[2, 600], [5, 1300], [7, 2000], [9, 2700], [6, 3400]].forEach(([i, ms]) => at(me, ms, () => {
+      const [x, z] = SH['4-3-3'][i];
+      b.moveTo(x, z, 0.6); t[cur].highlight(false); t[i].highlight(); cur = i;
+    }));
+    at(me, 4200, () => {
+      t[cur].highlight(false); t[3].highlight(); cur = 3;
+      t[3].moveTo(6, -14, 1.3); b.moveTo(6, -14, 1.3);
+      app.label('centre-back carries', { x: 22, z: -20, y: 8, size: 24 });
+    });
+    at(me, 5000, () => {
+      t[9].moveTo(-8, 6, 1.2);
+      app.arrow([0, 18], [-8, 6], GOLD); app.arrow([-8, 6], [-26, 20], GOLD);
+      app.label('not just a striker', { x: -24, z: 30, y: 8, size: 26 });
+    });
+  },
+];
+steps((i) => scenes[i] && scenes[i]());
+</script>
+</body>
+</html>

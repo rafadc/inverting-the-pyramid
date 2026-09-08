@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inverting the Pyramid — an illustrated fan companion</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./three/three.module.min.js","three/addons/":"./three/addons/"}}</script>
+</head>
+<body>
+<div id="stage"></div>
+<main>
+  <header class="hero">
+    <div class="kicker">A fan companion to Jonathan Wilson's book</div>
+    <h1>Inverting the Pyramid</h1>
+    <p>Twenty-one chapters, one and a half centuries of football tactics, rebuilt in 3D. Step through each chapter to watch the pyramid turn upside down, from 2-3-5 to the false nine.</p>
+    <p class="legend">Drag the pitch to orbit. Press Next to advance the story.</p>
+  </header>
+  <section class="grid" id="chapters"></section>
+</main>
+<script type="module">
+import { createApp, team, reshape } from './pitch.js';
+const app = createApp(document.getElementById('stage'), { cameraPos: [60, 60, -110], autoRotate: true });
+const red = team(app, '2-3-5', { color: 0xe63946 });
+const shapes = ['2-3-5', '3-2-2-3', '4-2-4', '4-3-3', '4-4-2', '3-5-2', '4-2-3-1', '4-3-3'];
+let i = 0;
+setInterval(() => { i = (i + 1) % shapes.length; reshape(red, shapes[i]); }, 3200);
+
+const chapters = [
+  ['From Genesis to the Pyramid', 'From the medieval mob and the dribbling game to Queen’s Park’s passing and the 2-3-5 Pyramid.'],
+  ['The Waltz and the Tango', 'Hogan and Meisl’s Danubian school, MTK Budapest, and the criollo toque of Argentina and Uruguay.'],
+  ['The Third Back', 'McCracken’s offside trap, the 1925 law change, and Chapman’s Arsenal turning the 2-3-5 into the W-M.'],
+  ['How Fascism Destroyed the Coffee House', 'Vienna’s Wunderteam, Pozzo’s metodo and two World Cups, and how the Anschluss ended the coffee-house game.'],
+  ['Organised Disorder', 'Soviet football, the 1937 Basque tour and Arkadiev’s Dinamo Moscow turning the W-M into organised disorder.'],
+  ['The Hungarian Connection', 'Bukovi’s withdrawn centre-forward, Sebes’s Magical Magyars and the 6-3 at Wembley that lost Harry Johnston.'],
+  ['Harnessing the Carnival', 'From the Maracanazo and Flávio Costa’s diagonal to the 4-2-4 of Didi, Garrincha and Pelé in Sweden 1958.'],
+  ['The English Pragmatism (1)', 'Reep’s notebook, Cullis’s Wolves, push-and-run and Ramsey’s Wingless Wonders: England’s long-ball logic.'],
+  ['The Birth of the New', 'Maslov’s Dynamo Kyiv: the first 4-4-2, zonal marking, a holding midfielder and the invention of pressing.'],
+  ['Catenaccio', 'Rappan’s verrou, Viani, Rocco and Herrera’s Grande Inter: the libero, the man-markers and the lightning counter.'],
+  ['After the Angels', 'La Máquina, the angels of 1957, Helsingborg 6-1 and the anti-fútbol of Zubeldía’s Estudiantes.'],
+  ['Total Football', 'Ajax, Michels, Cruyff and the geometry of space: pressing, the offside trap and any player in any position.'],
+  ['Science and Sincerity', 'Lobanovskyi’s Dynamo Kyiv as a system of 22 elements: coalitions, squeezing, home and away modes, Lyon 1986.'],
+  ['Fly Me to the Moon', 'Brazil 1970 and the moon landing, the Dutch shock of 1974, Menotti’s Argentina and Sarrià 1982: the day system won.'],
+  ['The English Pragmatism (2)', 'Liverpool’s control, Clough’s Forest, Taylor’s Watford, Wimbledon’s cavalry charge and Egil Olsen’s Norway.'],
+  ['The Return of the Back Three', 'Bilardo’s 3-5-2, Piontek’s spare man and how the wing-back replaced the winger by Italia 90.'],
+  ['The Coach Who Wasn’t a Horse', 'Sacchi’s Milan: the 25-metre block, four reference points, shadow play and the death of the libero.'],
+  ['Total Recall', 'Van Gaal’s Ajax of 1995 and Bielsa’s Newell’s: the diamond, the dropping pivot and the 25-metre pressing block.'],
+  ['Ghosts and the Machine', 'The enganche hunted down, Lillo’s doble pivote, 4-2-3-1 pressing, and the specialist yielding to the universal player.'],
+  ['Pressing and Possession', 'Guardiola’s Barcelona, juego de posición, the five-second press, Mourinho’s Porto and Inter, Spain’s 4-6-0.'],
+  ['The Post-Cruyffian World', 'Bayern and Dortmund end the possession age; pressing, back threes and inverted full-backs complete the pyramid.'],
+];
+document.getElementById('chapters').innerHTML = chapters.map(([t, d], k) =>
+  `<a class="card" href="ch${String(k + 1).padStart(2, '0')}.html"><div class="num">CHAPTER ${k + 1}</div><h3>${t}</h3><p>${d}</p></a>`).join('');
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prologue — Inverting the Pyramid</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./three/three.module.min.js","three/addons/":"./three/addons/"}}</script>
+</head>
+<body>
+<nav class="top"><a href="index.html">← All chapters</a><a href="ch01.html">Chapter 1 →</a></nav>
+<div id="stage"></div>
+<main>
+  <header class="hero">
+    <div class="kicker">Prologue</div>
+    <h1>What's the difference?</h1>
+    <p>A tapas bar in Lisbon, Euro 2004. A journalist asks why anyone cares whether England play 4-4-2 or a diamond. Wilson's answer is the whole book: the numbers are not the same, and the shape decides where the game is won.</p>
+  </header>
+
+  <section class="step">
+    <h2>The flat 4-4-2</h2>
+    <p>Two banks of four. Compact, easy to coach, and the shape Sven-Göran Eriksson trusted. The width comes from the wide midfielders; the centre has two bodies.</p>
+    <div class="legend"><span class="dot" style="background:#e63946"></span>England</div>
+  </section>
+
+  <section class="step">
+    <h2>The diamond</h2>
+    <p>Same eleven players, four midfielders still, but now one sits, two shuttle and one plays behind the strikers. The centre is crowded, the flanks are empty. Which one you pick decides who gets the ball where.</p>
+  </section>
+
+  <section class="step">
+    <h2>The pyramid, inverted</h2>
+    <p>Football began with two defenders and five forwards. It ends the book with five defenders and one. Numbers, it turns out, are everything.</p>
+  </section>
+</main>
+<footer class="chapter-nav"><a href="index.html">← All chapters</a><a href="ch01.html">Chapter 1: From Genesis to the Pyramid →</a></footer>
+
+<script type="module">
+import { createApp, team, reshape, steps } from './pitch.js';
+const app = createApp(document.getElementById('stage'));
+const eng = team(app, "4-4-2", { color: 0xe63946 });
+app.flyTo([0, 75, -100]);
+
+const scenes = [
+  () => { reshape(eng, '4-4-2'); app.flyTo([0, 75, -100]); },
+  () => { reshape(eng, '4-1-2-1-2'); app.flyTo([40, 50, -80]); },
+  () => { reshape(eng, '2-3-5'); app.flyTo([0, 90, -60]); setTimeout(() => reshape(eng, '5-4-1'), 2000); },
+];
+steps((i) => scenes[i] && scenes[i]());
+</script>
+</body>
+</html>

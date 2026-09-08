@@ -105,5 +105,6 @@ body.stepped footer.chapter-nav { display: none; }
   body.stepped header.hero { padding-bottom: 7rem; }
 }
 
-.disclaimer { padding: 0 6vw 4rem; max-width: 72ch; color: var(--muted); font-size: 0.85rem; line-height: 1.6; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+.disclaimer { padding: 1rem 6vw 4rem; background: var(--bg); max-width: none; color: var(--muted); font-size: 0.85rem; line-height: 1.6; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
 .disclaimer em { color: var(--ink); }
+.disclaimer p { max-width: 90ch; margin: 0; }
